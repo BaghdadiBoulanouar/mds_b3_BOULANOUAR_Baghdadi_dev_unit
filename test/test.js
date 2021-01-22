@@ -49,11 +49,11 @@ describe('Checking Names', () => {
 });
 
 test('Adds 2 + 2 to equal 4', () => {
-  expect(2 + 2).toBe(4);
+  expect(functions.add(2,2)).toBe(4);
 });
 
 test('Adds 2 + 2 to NOT equal 5', () => {
-  expect(2 + 2).not.toBe(5);
+  expect(functions.add(2,2)).not.toBe(5);
 });
 
 /*
@@ -87,13 +87,13 @@ test('User should be Marc Antoine object', () => {
 test('Should be under or equal 1000', () => {
   const load1 = 500;
   const load2 = 500;
-  expect(load1).toBeLessThanOrEqual(1000);
-  expect(load2).toBeLessThanOrEqual(1000);
+  expect(functions.checkValue(load1)).toBeLessThanOrEqual(1000);
+  expect(functions.checkValue(load2)).toBeLessThanOrEqual(1000);
 });
 
 // Regex
 test('There is no I in the word team', () => {
-  expect('team').not.toMatch(/I/);
+  expect(functions.checkValue('team')).not.toMatch(/I/);
 });
 
 // Arrays
