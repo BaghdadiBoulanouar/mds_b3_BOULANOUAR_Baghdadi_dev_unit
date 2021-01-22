@@ -129,4 +129,3 @@ test('String reverses', () => {
 test('String reverses with uppercase', () => {
   expect(reverseString("TEST")).toBe("tset")
 });
-
