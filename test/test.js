@@ -107,7 +107,7 @@ test('Admin should be in usernames', () => {
 // Async Await since ES7
 test('User fetched name should be Leanne Graham', async () => {
   const data = await functions.fetchUser();
-  expect(data.name).toBe('Leanne Graham');
+  expect(data.name) .toBe('Leanne Graham');
 });
 
 /*
@@ -129,3 +129,4 @@ test('String reverses', () => {
 test('String reverses with uppercase', () => {
   expect(reverseString("TEST")).toBe("tset")
 });
+
